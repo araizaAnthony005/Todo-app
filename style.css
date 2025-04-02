@@ -135,36 +135,62 @@ li.completed {
   color: #fff;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 500px) {
-  body {
-    padding: 20px;
+@media (max-width: 600px) {
+  .todo-app {
+    padding: 20px 15px;
   }
 
   h1 {
     font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .input-group {
+  .controls {
     flex-direction: column;
+    gap: 12px;
   }
 
-  button {
+  .controls input,
+  .controls button {
     width: 100%;
+    font-size: 1.1rem;
+    padding: 14px 16px;
+    border-radius: 8px;
   }
 
-  input[type="text"] {
-    width: 100%;
+  ul {
+    padding-left: 0;
   }
 
   li {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
+    font-size: 1.05rem;
+    padding: 16px 12px;
+    margin-bottom: 10px;
   }
 
   .filters {
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
+    align-items: stretch;
   }
+
+  .filters button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .theme-toggle {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+button:active,
+input:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+  transition: transform 0.1s ease, opacity 0.1s ease;
 }
