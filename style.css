@@ -179,3 +179,30 @@ button:active {
   opacity: 0.9;
   transition: transform 0.1s ease;
 }
+.back-btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  width: fit-content;
+  font-size: 1rem;
+  color: var(--accent-color, #0077ff);
+  text-decoration: none;
+  padding: 10px 16px;
+  border: 2px solid var(--accent-color, #0077ff);
+  border-radius: 8px;
+  background: transparent;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.back-btn:hover {
+  background: var(--accent-color, #0077ff);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .back-btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
