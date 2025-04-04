@@ -190,3 +190,33 @@ button:active {
   opacity: 0.9;
   transition: transform 0.1s ease;
 }
+
+/* Final back button fix for all mobile sizes */
+.back-btn {
+  position: fixed;
+  top: 24px;
+  left: 20px;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1.5px solid var(--accent-color);
+  border-radius: 6px;
+  background: transparent;
+  z-index: 999;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.back-btn:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .back-btn {
+    top: 28px;
+    left: 20px;
+    font-size: 0.85rem;
+    padding: 10px 14px;
+  }
+}
